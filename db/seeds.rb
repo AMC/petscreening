@@ -8,10 +8,10 @@ Pet.destroy_all
 # Create pets
 Pet.create!(
   [
-    { name: 'Buddy', kind: 'Dog', breed: 'Golden Retriever' },
-    { name: 'Whiskers', kind: 'Cat', breed: 'Siamese' },
-    { name: 'Tweety', kind: 'Bird', breed: 'Canary' },
-    { name: 'Nemo', kind: 'Fish', breed: 'Clownfish' }
+    { name: 'Buddy', kind: 'Dog', breed: 'Golden Retriever', weight: 60 },
+    { name: 'Whiskers', kind: 'Cat', breed: 'Siamese', weight: 8.5 },
+    { name: 'Tweety', kind: 'Bird', breed: 'Canary', weight: 1 },
+    { name: 'Nemo', kind: 'Fish', breed: 'Clownfish', weight: 0.25 }
   ]
 )
 

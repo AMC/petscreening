@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  kind: MyString
-  breed: MyString
+  name: Fido
+  kind: Dog
+  breed: Labrador
+  weight: 65
 
 two:
-  name: MyString
-  kind: MyString
-  breed: MyString
+  name: Figaro
+  kind: Cat
+  breed: Tabby
+  weight: 9.2
