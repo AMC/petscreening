@@ -1,6 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
+
 <%= render @pet %>
+
+<p>
+  <strong>Owner:</strong>
+  <%= link_to @pet.owner.name, @pet.owner %>
+</p>
 
 <div>
   <%= link_to "Edit this pet", edit_pet_path(@pet) %> |

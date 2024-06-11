@@ -2,13 +2,15 @@
 
 <h1>Pets</h1>
 
+<%= link_to "New pet", new_pet_path %>
+
 <div id="pets">
   <% @pets.each do |pet| %>
     <%= render pet %>
     <p>
       <%= link_to "Show this pet", pet %>
     </p>
+
+    <hr>
   <% end %>
 </div>
-
-<%= link_to "New pet", new_pet_path %>

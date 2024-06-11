@@ -5,9 +5,11 @@ one:
   kind: Dog
   breed: Labrador
   weight: 65
+  owner_id: 1
 
 two:
   name: Figaro
   kind: Cat
   breed: Tabby
   weight: 9.2
+  owner_id: 2
