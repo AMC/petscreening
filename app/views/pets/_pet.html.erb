@@ -11,7 +11,7 @@
 
   <p>
     <strong>Breed:</strong>
-    <%= pet.breed %>
+    <%= link_to pet.breed, breeds_show_path(name: pet.breed) %>
   </p>
 
   <p>
