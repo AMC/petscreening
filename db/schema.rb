@@ -10,13 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_15_193131) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_12_143827) do
+  create_table "breeds", id: :string, force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_breeds_on_name", unique: true
+  end
+
+  create_table "owners", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "kind"
     t.string "breed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "weight", precision: 5, scale: 2
+    t.integer "owner_id", null: false
+    t.index ["owner_id"], name: "index_pets_on_owner_id"
   end
 
+  add_foreign_key "pets", "owners"
 end

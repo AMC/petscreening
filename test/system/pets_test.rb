@@ -17,6 +17,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Breed", with: @pet.breed
     fill_in "Kind", with: @pet.kind
     fill_in "Name", with: @pet.name
+    fill_in "Weight", with: @pet.weight
     click_on "Create Pet"
 
     assert_text "Pet was successfully created"
@@ -30,6 +31,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Breed", with: @pet.breed
     fill_in "Kind", with: @pet.kind
     fill_in "Name", with: @pet.name
+    fill_in "Weight", with: @pet.weight
     click_on "Update Pet"
 
     assert_text "Pet was successfully updated"

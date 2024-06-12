@@ -12,6 +12,11 @@
   <% end %>
 
   <div>
+    <%= form.label :owner, style: "display: block" %>
+    <%= form.collection_select :owner_id, Owner.all, :id, :name %>
+  </div>
+
+  <div>
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
@@ -24,6 +29,11 @@
   <div>
     <%= form.label :breed, style: "display: block" %>
     <%= form.text_field :breed %>
+  </div>
+
+  <div>
+    <%= form.label :weight, style: "display: block" %>
+    <%= form.number_field :weight %>
   </div>
 
   <div>
